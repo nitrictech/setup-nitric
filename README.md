@@ -27,14 +27,14 @@ npm run build
 
 ## Example workflow
 
-name: Sample configuratin to deploy to AWS
+name: Sample configuration to deploy to AWS
 on:
   workflow_dispatch:
   push:
     branches:
       - main
 env:
-  PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_ACCESS_TOKEN }}          
+  PULUMI_CONFIG_PASSPHRASE: ${{ secrets.PULUMI_CONFIG_PASSPHRASE }}          
   PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
 jobs:
   update:
