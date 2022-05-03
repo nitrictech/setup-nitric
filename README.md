@@ -27,6 +27,7 @@ npm run build
 
 ## Example workflow
 
+```yaml
 name: Sample configuration to deploy to AWS
 on:
   workflow_dispatch:
@@ -59,3 +60,4 @@ jobs:
         run: npm install
       - name: Deploy stack to aws
         run: nitric up -s dev -v0
+```
